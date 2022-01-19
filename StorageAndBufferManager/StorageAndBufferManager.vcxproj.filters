@@ -24,6 +24,12 @@
     <ClCompile Include="basicUnit.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="BufferManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LRU.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="test1.txt">
@@ -38,6 +44,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="BufferManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LRU.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

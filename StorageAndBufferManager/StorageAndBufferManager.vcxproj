@@ -140,7 +140,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="basicUnit.cpp" />
+    <ClCompile Include="BufferManager.cpp" />
     <ClCompile Include="DataStorageManager.cpp" />
+    <ClCompile Include="LRU.cpp" />
     <ClCompile Include="StorageAndBufferManager.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +152,7 @@
     <ClInclude Include="basicUnit.h" />
     <ClInclude Include="BufferManager.h" />
     <ClInclude Include="DataStorageManager.h" />
+    <ClInclude Include="LRU.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

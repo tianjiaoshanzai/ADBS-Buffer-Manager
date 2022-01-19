@@ -22,7 +22,7 @@ bFrame buf[DEFBUFSIZE];//buffer定义
 struct BCB
 {//缓存控制单元，一个frame对应一个BCB
     BCB();
-    BCB(int frame_id);
+    BCB(int frm_id);
     int page_id;
     int frame_id;
     int latch;

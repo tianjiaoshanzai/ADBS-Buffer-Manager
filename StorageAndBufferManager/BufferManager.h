@@ -1,9 +1,13 @@
 #pragma once
 #include"basicUnit.h"
+#include"DataStorageManager.h"
 class BMgr
 {
 public:
 	BMgr();
+	BMgr(DSMgr* dsmgr_in);
+	~BMgr();
+	
 	// Interface functions
 	int FixPage(int page_id, int prot);
 	void NewPage FixNewPage();
@@ -23,4 +27,5 @@ private:
 	int ftop[DEFBUFSIZE];
 	BCB* ptof[DEFBUFSIZE];
 	int hitCnt;//ÃüÖÐ´ÎÊý
+	DSMgr* dsmgr;
 };
