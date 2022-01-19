@@ -139,7 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="basicUnit.cpp" />
+    <ClCompile Include="DataStorageManager.cpp" />
     <ClCompile Include="StorageAndBufferManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="test1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="basicUnit.h" />
+    <ClInclude Include="BufferManager.h" />
+    <ClInclude Include="DataStorageManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

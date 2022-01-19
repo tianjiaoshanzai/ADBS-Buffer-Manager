@@ -18,5 +18,27 @@
     <ClCompile Include="StorageAndBufferManager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="DataStorageManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="basicUnit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="test1.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="basicUnit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStorageManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
