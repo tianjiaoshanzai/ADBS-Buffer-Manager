@@ -27,7 +27,7 @@ int LRU::Victim() {
     return ret;
 }
 
-void LRU::Insert(int frame_id) {
+void LRU::addFrame(int frame_id) {
     auto iter = map_.find(frame_id);
     if (iter == map_.end()) {
         if (size_ == max_size_)
@@ -39,6 +39,11 @@ void LRU::Insert(int frame_id) {
     set_pointer(tmp->prev, tmp->next);
     size_--;
     append_node(tmp);
+}
+
+void LRU::setFrame(int frame_id_in)
+{
+
 }
 
 void LRU::Remove(int frame_id) {

@@ -1,10 +1,22 @@
 ﻿#include <iostream>
+#include <cstring>
+#include <time.h>
+
+#include"BufferManager.h"
 
 
 
-int init_test_file() {
-//初始化测试文件
-
+int init_db_file() {
+//初始化数据库文件
+    FILE* db_file = fopen(db_file_path.c_str(), "r");
+    /* create db with certain size */
+    if (db_file == NULL) {
+        db_file = fopen(db_file_path.c_str(), "w");
+        void* buffer = malloc(50000 * sizeof(bFrame));
+        fwrite(buffer, PAGE_SIZE, 50000, db_file);
+        free(buffer);
+    }
+    fclose(db_file);
 }
 
 

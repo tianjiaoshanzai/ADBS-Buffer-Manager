@@ -14,7 +14,9 @@ public:
     LRU(int max_size);
     ~LRU();
     int Victim();
-    void Insert(int frame_id_in);
+    //void Insert(int frame_id_in);
+    void addFrame(int frame_id_in);
+    void setFrame(int frame_id_in);
     void Remove(int frame_id_in);
     int Size();
 
